@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "estructura.dtd">
+<catalog>
+   
+    <llista_actors>
+        <actor id="A1">
+            <nom>Leonardo DiCaprio</nom>
+            <edat>48</edat>
+        </actor>
+        <actor id="A2">
+            <nom>Meryl Streep</nom>
+            <edat>73</edat>
+        </actor>
+        <actor id="A3">
+            <nom>Tom Hanks</nom>
+            <edat>67</edat>
+        </actor>
+    </llista_actors>
+
+   
+    <llista_pelicules>
+        <pelicula id="P1" idioma="en">
+            <titol>Inception</titol>
+            <director>Christopher Nolan</director>
+            <any>2010</any>
+            <actors>
+                <actor_ref>A1</actor_ref>
+            </actors>
+        </pelicula>
+        <pelicula id="P2" idioma="en">
+            <titol>The Post</titol>
+            <director>Steven Spielberg</director>
+            <any>2017</any>
+            <actors>
+                <actor_ref>A2</actor_ref>
+                <actor_ref>A3</actor_ref>
+            </actors>
+        </pelicula>
+         <pelicula id="P3" idioma="en">
+            <titol> Jaws </titol>
+            <director>Steven Spielberg</director>
+            <any>1975</any>
+            <actors>
+                <actor_ref>A1</actor_ref>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="P1"/>
+        <recomanacio ref="P2"/>
+        <recomanacio ref="P3"/>
+    </llista_recomanacions_pelicules>
+</catalog>
